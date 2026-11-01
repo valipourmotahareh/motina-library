@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
+import 'prototype/design_tokens.dart';
+import 'prototype/library_home.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+void main() => runApp(const MainApp());
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
-  }
+  Widget build(BuildContext context) => MaterialApp(
+    title: 'Motina Library · Prototype',
+    debugShowCheckedModeBanner: false,
+    theme: DesignTokens.theme,
+    home: const Directionality(
+      textDirection: TextDirection.rtl,
+      child: LibraryHome(),
+    ),
+  );
 }
