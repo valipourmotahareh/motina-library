@@ -1,0 +1,15 @@
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/branding/app_icon.png
+  min_sdk_android: 21
+  adaptive_icon_background: "#FAEDDB"
+  # Keep the flattened approved artwork intact; do not invent separated layers.
+  adaptive_icon_foreground: assets/branding/app_icon.png
+  adaptive_icon_foreground_inset: 20
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: assets/branding/app_icon_web.png
+    background_color: "#FAEDDB"
+    theme_color: "#285943"
